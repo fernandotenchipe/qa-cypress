@@ -91,7 +91,7 @@ describe('Boozang Quiz Automation', () => {
         });
       
         // Paso 2: Esperar a que aparezca BLUE o YELLOW y hacer clic en el correcto
-        cy.wait(300);
+        cy.wait(500);
         cy.get('button').should('exist').then(($btns) => {
           const colorBtn = [...$btns].find(btn => {
             const text = btn.innerText.trim().toLowerCase();
